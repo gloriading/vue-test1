@@ -75,7 +75,7 @@
     </div>
 
     <div id="controlArea">
-      <button class="btn-basic">
+      <button class="btn-basic btn-large">
         Update
       </button>
     </div>
@@ -150,7 +150,6 @@ export default {
 </script>
 ​
 <style lang="scss" scoped>
- $basic: red;
   $main-blue: rgba(0, 87, 142, 1);
   $main-white: #F2F4F4;
 
@@ -167,7 +166,6 @@ export default {
   }
 
   #editingArea {
-    border: 1px solid $basic;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -197,6 +195,17 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    .btn-basic {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+
+  #controlArea {
+    .btn-basic {
+      margin-top: 1rem;
+    }
   }
 
   .group {
@@ -234,10 +243,5 @@ export default {
     border-bottom: 1px solid $main-blue;
     outline: none;
     min-width: 300px;
-  }
-
-  .btn-basic {
-    margin-left: 10px;
-    margin-right: 0;
   }
 </style>

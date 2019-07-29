@@ -98,6 +98,8 @@ export default {
 <style lang="scss" scoped>
   $main-dark: #333333;
   $main-blue: rgba(0, 87, 142, 1);
+  $main-blue-light: #CCDDE8;
+  $main-blue-dark: #002C47;
   $main-white: #F2F4F4;
   $main-yellow: #FCDB24;
 
@@ -106,8 +108,8 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $main-blue;
-    color: $main-white;
+    background-color: $main-blue-light;
+    color: $main-blue-dark;
     padding: 1rem 2rem;
   }
   #selectionArea {

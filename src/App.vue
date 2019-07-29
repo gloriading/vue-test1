@@ -90,6 +90,8 @@ export default {
 
 <style lang="scss">
 $main-blue: #00578E;
+$main-blue-light: #CCDDE8;
+$main-blue-dark: #002C47;
 $main-white: #F2F4F4;
 $main-red: #D0021B;
 $main-yellow: #FCDB24;
@@ -134,7 +136,11 @@ $main-yellow: #FCDB24;
 }
 
 .btn-danger {
-  background-color: $main-red;
+  background-color: $main-blue-dark;
   color: whitesmoke;
+}
+
+.btn-large {
+  min-width: 200px;
 }
 </style>
