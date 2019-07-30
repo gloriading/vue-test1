@@ -9,6 +9,7 @@
     :formFieldList="formFieldList"
     :selectedProps="selectedProps"
     :selectedEditsProps="selectedEditsProps"
+    ref="childEditsBasic"
     />
   </div>
 </template>
@@ -48,6 +49,11 @@ export default {
 
       this.selectedProps = { ...resultProps, fieldsOfSelectedForm };
       this.selectedEditsProps = editsProp;
+
+      this.$refs.childEditsBasic.selectedEdits = editsProp.edits;
+      this.$refs.childEditsBasic.selectedForm = form;
+      // this.$refs.childEditsBasic.selectedField = field;
+      this.$refs.childEditsBasic.onSelectForm();
     },
     constructHeaderProps(props) {
       const {

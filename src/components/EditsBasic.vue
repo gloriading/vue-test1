@@ -108,15 +108,6 @@ export default {
     this.editsFormSelections = formList.map(formObj => formObj.name);
     this.editsConditions = editsConditions;
   },
-  updated() {
-    // initial values of the dropdowns
-    this.selectedEdits = this.selectedEditsProps.edits;
-    this.selectedForm = this.selectedProps.form;
-    this.editsFieldSelections = this.selectedProps.fieldsOfSelectedForm;
-  },
-  mounted() {
-    // debugger
-  },
   methods: {
     onSelectForm() {
       this.editsFieldSelections = this.getFieldNameArr(this.selectedForm);
