@@ -39,14 +39,14 @@
 
         <div class="basic">
           <h3>the field(s)</h3>
-          <select v-model="selectedField">
+          <select v-model="selectedField" @change="onSelectField">
             <option v-for="(field, index) in editsFieldSelections" :key="index" :value="field">
               {{ titleCased(field) }}
             </option>
           </select>
-          <button class="btn-basic" @click="addField">
+          <!-- <button class="btn-basic" @click="addField">
             + Add another field
-          </button>
+          </button> -->
         </div>
 
         <div class="basic render-selection">
@@ -111,6 +111,10 @@ export default {
   methods: {
     onSelectForm() {
       this.editsFieldSelections = this.getFieldNameArr(this.selectedForm);
+    },
+    onSelectField() {
+      console.log('SELECTING...')
+      this.addField();
     },
     getFieldNameArr(formName) {
       const fieldObj = this.formFieldList[formName];

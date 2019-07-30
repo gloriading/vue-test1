@@ -5,10 +5,11 @@ const editsBasic = {
 };
 
 const editsConditions = {
-  is_checked: 'Is Checked',
-  is_not_checked: 'Is NOT Checked',
-  is_equal_to: 'Is Equal To',
-  is_not_equal_to: 'Is NOT Equal To',
+  isChecked: 'Is Checked',
+  isNotChecked: 'Is NOT Checked',
+  isEqualTo: 'Is Equal To',
+  isNotEqualTo: 'Is NOT Equal To',
+  someAreChecked: 'Have at Lease One Checked'
 };
 
 export { editsBasic, editsConditions };
